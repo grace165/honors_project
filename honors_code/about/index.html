@@ -9,12 +9,8 @@
 <body>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <div>
-                <h1>About Me</h1>
-        </div>
-
-        <div class="navBar">
-                <a class="link" href="../index.html">Home</a>
+        <div class="navBar center">
+                <a class="link" href="../../index.html">Home</a>
                 &nbsp;
                 &nbsp;
                 <a class="link" href="../businessSetup/index.html">Business Setup</a>
@@ -32,12 +28,16 @@
                 <a class="link" href="../graphicsGremlinSite/index.html">Graphic Design Site</a>
         </div>
 
+        <div class="center title">
+                <h1>About Me</h1>
+        </div>
+
         
-        <div class="footer">
-            <a class="link" href="./contact/index.html">Contact</a>
+        <div class="footer center">
+            <a class="link" href="../contact/index.html">Contact</a>
             &nbsp;
             &nbsp;
-            <a class="link" href="./about/index.html">About</a>
+            <a class="link" href="./index.html">About</a>
             &nbsp;
             &nbsp;
             <!--space for social media links/clickable icon links-->
@@ -46,41 +46,82 @@
 </body>
 
 <style>
-
-        html{
-                background-color: black;
-                color: white;
-                margin-left: auto;
-                margin-right: auto;
+        html {
                 font-family: sans-serif;
         }
-        
-        body{
-                background-color: rgb(161, 52, 235);
+
+        body {
+                background-color: whitesmoke;
                 font-size: 15px;
+                width: 100%;
+                margin: 0%;
         }
-        
-        .container{
-                box-shadow: 0 0 50px 15px rgb(52, 235, 85);
+
+        p{
+                padding: 20px;
+                text-indent: 40px;
+                line-height: 1.6;
+        }
+
+        hr{
+                margin-left: 40px;
+                margin-right: 40px;
+                background-color: #b05cffb7;
+                height: 2px; 
+                border-radius: 40px;
+        }
+
+        .container {
                 border-radius: 20px;
         }
-        
-        .navBar{
-                background-color: black;
-                font-family: 'Courier New', Courier, monospace;
+
+        .navBar {
+                background-color: #b05cffb7;                font-size: 20px;
+                height: 75px;
+        }
+
+        .content{
+                background-color: rgb(227, 202, 255);
+                margin-left: 40px; 
+                margin-right: 40px;
                 font-size: 20px;
         }
-        
-        .link{
-                color: rgb(161, 52, 235);
+
+        .title{
+                padding-top:  40px;
+                padding-bottom: 20px;
         }
-        
-        .link:hover{
-                color: rgb(52, 235, 85);
+
+        .footer {
+                background-color: #b05cffb7;
+                color: white;
+                font-size: 15px;
+                padding-bottom: 0%;
+        }
+
+        .link {
+                color: white;
+                text-decoration: none;
+        }
+
+        .link2 {
+                color: white;
+                text-decoration: none;
+                margin: 10px;
+        }
+
+        .link:hover,
+        .link2:hover {
+                color: rgb(124, 255, 148);
                 text-decoration: underline;
         }
-        
-        
-        </style>
+
+        .center{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+        }
+</style>
 
 </html>
