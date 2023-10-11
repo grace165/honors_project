@@ -9,7 +9,7 @@
 <body>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <div class="navBar">
+        <div class="navBar center">
                 <a class="link" href="../../index.html">Home</a>
                 &nbsp;
                 &nbsp;
@@ -27,12 +27,52 @@
                 &nbsp;
                 <a class="link" href="../graphicsGremlinSite/index.html">Graphic Design Site</a>
         </div>
-         
-        <div>
+
+        <div class="title center">
                 <h1>Business Setup</h1>
         </div>
 
-        <div class="footer">
+        <div class="content">
+                <p>Brief Description of processes and procedures ahead</p>
+        </div>
+
+        <div class="center container2">
+                <div class="leftContent">
+                        <p>Timeline</p>
+                </div>
+
+                <div class="spacer"></div>
+
+                <div class="rightContent">
+                        <p>link and description</p>
+                </div>
+        </div>
+
+        <div class="center container2">
+                <div class="leftContent">
+                        <p>Steps</p>
+                </div>
+
+                <div class="spacer"></div>
+
+                <div class="rightContent">
+                        <p>link and description</p>
+                </div>
+        </div>
+
+        <div class="center container2">
+                <div class="leftContent">
+                        <p>Tutorials</p>
+                </div>
+
+                <div class="spacer"></div>
+
+                <div class="rightContent">
+                        <p>link and description</p>
+                </div>
+        </div>
+
+        <div class="footer center">
                 <a class="link" href="../contact/index.html">Contact</a>
                 &nbsp;
                 &nbsp;
@@ -57,17 +97,17 @@
                 margin: 0%;
         }
 
-        p{
+        p {
                 padding: 20px;
                 text-indent: 40px;
                 line-height: 1.6;
         }
 
-        hr{
+        hr {
                 margin-left: 40px;
                 margin-right: 40px;
                 background-color: #b05cffb7;
-                height: 2px; 
+                height: 2px;
                 border-radius: 40px;
         }
 
@@ -75,20 +115,45 @@
                 border-radius: 20px;
         }
 
+        .container2{
+                padding: 20px;
+        }        
+
         .navBar {
-                background-color: #b05cffb7;                font-size: 20px;
+                background-color: #b05cffb7;
+                font-size: 20px;
                 height: 75px;
         }
 
-        .content{
+        .content {
                 background-color: rgb(227, 202, 255);
-                margin-left: 40px; 
-                margin-right: 40px;
+                margin-left: 100px;
+                margin-right: 100px;
                 font-size: 20px;
         }
 
-        .title{
-                padding-top:  40px;
+        .leftContent {
+                background-color: rgb(227, 202, 255);
+                width: 200px;
+                font-size: 20px;
+        }
+
+        .rightContent {
+                background-color: whitesmoke;
+                border-color: #b05cffb7;
+                font-size: 20px;
+                border-width: 5px;
+                border-style: solid;
+                width: 400px;
+                height: 100px;
+        }
+
+        .spacer{
+                width: 200px;
+        }
+
+        .title {
+                padding-top: 40px;
                 padding-bottom: 20px;
         }
 
@@ -116,7 +181,7 @@
                 text-decoration: underline;
         }
 
-        .center{
+        .center {
                 display: flex;
                 align-items: center;
                 justify-content: center;
