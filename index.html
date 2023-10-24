@@ -15,10 +15,22 @@
                         <a class="link" href="./index.html">Home</a>
                         &nbsp;
                         &nbsp;
-                        <a class="link" href="../honors_code/businessSetup/index.html">Business Setup</a>
+                        <div class="navDropDown">
+                                <a class="link dropdownBtn" href="../honors_code/businessSetup/index.html">Business Setup <i>&#9660</i></a>
+                                <div class="dropdownContent">
+                                        <a href="../honors_code/businessSetup/timeline.html">Timeline</a>
+                                        <a href="../honors_code/businessSetup/steps.html">Steps</a>
+                                        <a href="../honors_code/businessSetup/tutorials.html">Tutorials</a>
+                                </div>
+                        </div>
                         &nbsp;
                         &nbsp;
-                        <a class="link" href="../honors_code/legalDocumentation/index.html">Legal Docs</a>
+                        <div class="navDropDown">
+                                <a class="link dropdownBtn" href="../honors_code/legalDocumentation/index.html">Legal Docs <i>&#9660</i></a>
+                                <div class="dropdownContent">
+                                        <a href="../honors_code/legalDocumentation/onlineResources.html">Resources</a>
+                                </div>
+                        </div>
                         &nbsp;
                         &nbsp;
                         <a class="link" href="../honors_code/sources/index.html">Sources</a>
@@ -42,17 +54,21 @@
                                 The focus will be on the small business and the necessary steps to open a business.
                                 Each step will be carefully documented, so that anyone interested in opening a business
                                 can follow the same procedures.
-                                The steps will be recorded in a &#8220how-to&#8220 style on the Azure website I create. This
+                                The steps will be recorded in a &#8220how-to&#8220 style on the Azure website I create.
+                                This
                                 process will include the use of JavaScript frameworks.
                                 I will also use a combination of images, text, links, and videos (linked to my YouTube)
                                 to properly convey my message.
                                 The graphic design business created will ultimately serve as an example of how to set up
-                                a small business; moreover, the website will emphasize the guidelines I create by adding real examples from my
-                                experiences. For example, any fees paid or paperwork signed to open the business will be documented.
+                                a small business; moreover, the website will emphasize the guidelines I create by adding
+                                real examples from my
+                                experiences. For example, any fees paid or paperwork signed to open the business will be
+                                documented.
                                 I expect the website itself to have multiple pages and sections with personal stories
                                 and advice (without sounding too much like a blog).
                                 In the end, I am aiming to produce an honors project that will undeniably represent all
-                                of my interests &#8211 this project will serve as a great culmination of my college education.
+                                of my interests &#8211 this project will serve as a great culmination of my college
+                                education.
                         </p>
                         <hr>
                         <p> My plan is to begin with a simple question: How does one open a sustainable, profitable
@@ -61,14 +77,17 @@
                                 its development.
                                 I also plan on seeking insight from industry experts prior to starting my project.
                                 This will lead to the beginning of documentation of steps taken to create my personal
-                                graphic design business&#8211I will list out the steps and procedures that an entrepreneur should focus on in a plain
+                                graphic design business&#8211I will list out the steps and procedures that an
+                                entrepreneur should focus on in a plain
                                 Word document before transferring to my website.
                                 My website will be created using Visual Studio Code, JavaScript Vue documentation, and
                                 Microsoft Azure web services.
-                                I will design a website that is visually pleasing and inviting&#8211accessibility and ease of
+                                I will design a website that is visually pleasing and inviting&#8211accessibility and
+                                ease of
                                 navigation will be a priority.
                                 I will also focus on providing a professional design to showcase the most important
-                                information. When writing my webpages, I will move from generic to specific with examples from my
+                                information. When writing my webpages, I will move from generic to specific with
+                                examples from my
                                 graphic design business.
                                 Once I have filled out the basic pages, I plan to add images, useful links, and videos
                                 to fully explain the procedures taken to open a small business.
@@ -83,7 +102,8 @@
                                 a graphic design business, a website detailing the procedures associated with creating a
                                 small business, a PowerPoint presentation showing the process of and summarizing my
                                 project, and a short essay attached to my website describing what I would do
-                                differently. Although this may seem ambitious, I think it is all necessary to fully cover the project
+                                differently. Although this may seem ambitious, I think it is all necessary to fully
+                                cover the project
                                 in enough detail.
                         </p>
                 </div>
@@ -122,6 +142,10 @@
                 line-height: 1.6;
         }
 
+        i{
+                font-size: 17px;
+        }
+
         hr {
                 margin-left: 40px;
                 margin-right: 40px;
@@ -138,6 +162,46 @@
                 background-color: #b05cffb7;
                 font-size: 20px;
                 height: 75px;
+                overflow: hidden;
+        }
+
+        .navDropDown {
+                float: center;
+                overflow: hidden;
+        }
+
+        .dropdownBtn .navDropDown {
+                background-color: inherit;
+                font-family: inherit;
+        }
+
+        .dropdownContent {
+                display: none;
+                position: absolute;
+                text-align: center;
+                justify-content: center;
+                max-width: 150px;
+                max-height: 100px;
+                min-height: 35px;
+                background-color: #b05cffb7;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+        }
+
+        .dropdownContent a{
+                float: none;
+                color: white;
+                line-height: 30px;
+                margin: 20px;
+        }
+
+        .dropdownContent a:hover{
+                text-decoration: underline;
+                color: rgb(9, 139, 68);
+        }
+
+        .navDropDown:hover .dropdownContent{
+                display: block;
         }
 
         .content {
@@ -172,7 +236,7 @@
 
         .link:hover,
         .link2:hover {
-                color: rgb(124, 255, 148);
+                color: rgb(9, 139, 68);
                 text-decoration: underline;
         }
 
