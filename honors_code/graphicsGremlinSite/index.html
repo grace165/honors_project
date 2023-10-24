@@ -13,10 +13,22 @@
                 <a class="link" href="../../index.html">Home</a>
                 &nbsp;
                 &nbsp;
-                <a class="link" href="../businessSetup/index.html">Business Setup</a>
+                <div class="navDropDown">
+                        <a class="link dropdownBtn" href="../businessSetup/index.html">Business Setup <i>&#9660</i></a>
+                        <div class="dropdownContent">
+                                <a href="../businessSetup/timeline.html">Timeline</a>
+                                <a href="../businessSetup/steps.html">Steps</a>
+                                <a href="../businessSetup/tutorials.html">Tutorials</a>
+                        </div>
+                </div>
                 &nbsp;
                 &nbsp;
-                <a class="link" href="../legalDocumentation/index.html">Legal Docs</a>
+                <div class="navDropDown">
+                        <a class="link dropdownBtn" href="../legalDocumentation/index.html">Legal Docs <i>&#9660</i></a>
+                        <div class="dropdownContent">
+                                <a href="../legalDocumentation/onlineResources.html">Resources</a>
+                        </div>
+                </div>
                 &nbsp;
                 &nbsp;
                 <a class="link" href="../sources/index.html">Sources</a>
@@ -25,9 +37,9 @@
                 <a class="link" href="../advice/index.html">Advice</a>
                 &nbsp;
                 &nbsp;
-                <a class="link" href="index.html">Graphic Design Site</a>
+                <a class="link" href="../graphicsGremlinSite/index.html">Graphic Design Site</a>
         </div>
- 
+
         <div class="title center">
                 <h1>Graphics Gremlin Site</h1>
         </div>
@@ -69,16 +81,16 @@
                 margin: 0%;
         }
 
-        p{
+        p {
                 padding: 20px;
                 line-height: 1.6;
         }
 
-        hr{
+        hr {
                 margin-left: 40px;
                 margin-right: 40px;
                 background-color: #b05cffb7;
-                height: 2px; 
+                height: 2px;
                 border-radius: 40px;
         }
 
@@ -87,8 +99,49 @@
         }
 
         .navBar {
-                background-color: #b05cffb7;                font-size: 20px;
+                background-color: #b05cffb7;
+                font-size: 20px;
                 height: 75px;
+                overflow: hidden;
+        }
+
+        .navDropDown {
+                float: center;
+                overflow: hidden;
+        }
+
+        .dropdownBtn .navDropDown {
+                background-color: inherit;
+                font-family: inherit;
+        }
+
+        .dropdownContent {
+                display: none;
+                position: absolute;
+                text-align: center;
+                justify-content: center;
+                max-width: 150px;
+                max-height: 100px;
+                min-height: 35px;
+                background-color: #b05cffb7;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+        }
+
+        .dropdownContent a {
+                float: none;
+                color: white;
+                line-height: 30px;
+                margin: 20px;
+        }
+
+        .dropdownContent a:hover {
+                text-decoration: underline;
+                color: rgb(9, 139, 68);
+        }
+
+        .navDropDown:hover .dropdownContent {
+                display: block;
         }
 
         .content {
@@ -124,8 +177,8 @@
                 color: slategray;
         }
 
-        .title{
-                padding-top:  40px;
+        .title {
+                padding-top: 40px;
                 padding-bottom: 20px;
         }
 
@@ -154,7 +207,7 @@
                 text-decoration: underline;
         }
 
-        .center{
+        .center {
                 display: flex;
                 align-items: center;
                 justify-content: center;

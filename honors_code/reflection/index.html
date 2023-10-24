@@ -13,10 +13,22 @@
                 <a class="link" href="../../index.html">Home</a>
                 &nbsp;
                 &nbsp;
-                <a class="link" href="../businessSetup/index.html">Business Setup</a>
+                <div class="navDropDown">
+                        <a class="link dropdownBtn" href="../businessSetup/index.html">Business Setup <i>&#9660</i></a>
+                        <div class="dropdownContent">
+                                <a href="../businessSetup/timeline.html">Timeline</a>
+                                <a href="../businessSetup/steps.html">Steps</a>
+                                <a href="../businessSetup/tutorials.html">Tutorials</a>
+                        </div>
+                </div>
                 &nbsp;
                 &nbsp;
-                <a class="link" href="../legalDocumentation/index.html">Legal Docs</a>
+                <div class="navDropDown">
+                        <a class="link dropdownBtn" href="../legalDocumentation/index.html">Legal Docs <i>&#9660</i></a>
+                        <div class="dropdownContent">
+                                <a href="../legalDocumentation/onlineResources.html">Resources</a>
+                        </div>
+                </div>
                 &nbsp;
                 &nbsp;
                 <a class="link" href="../sources/index.html">Sources</a>
@@ -41,27 +53,27 @@
         <div class="spacer2"></div>
 
         <div class="center rightContent1">
-            <p>essay on reflection and connection to culminating college experience</p>
+                <p>essay on reflection and connection to culminating college experience</p>
         </div>
 
         <div class="spacer2"></div>
 
         <div class="center rightContent">
-            <p>Thanks to those who helped again</p>
+                <p>Thanks to those who helped again</p>
         </div>
 
         <div class="spacer2"></div>
 
         <div class="footer center">
-            <a class="link2 " href="../contact/index.html">Contact</a>
-            &nbsp;
-            &nbsp;
-            <a class="link2" href="../about/index.html">About</a>
-            &nbsp;
-            &nbsp;
-            <a class="link2" href="../reflection/index.html">Reflection</a>
-            <!--space for social media links/clickable icon links-->
-    </div>
+                <a class="link2 " href="../contact/index.html">Contact</a>
+                &nbsp;
+                &nbsp;
+                <a class="link2" href="../about/index.html">About</a>
+                &nbsp;
+                &nbsp;
+                <a class="link2" href="../reflection/index.html">Reflection</a>
+                <!--space for social media links/clickable icon links-->
+        </div>
 
 </body>
 
@@ -102,6 +114,46 @@
                 background-color: #b05cffb7;
                 font-size: 20px;
                 height: 75px;
+                overflow: hidden;
+        }
+
+        .navDropDown {
+                float: center;
+                overflow: hidden;
+        }
+
+        .dropdownBtn .navDropDown {
+                background-color: inherit;
+                font-family: inherit;
+        }
+
+        .dropdownContent {
+                display: none;
+                position: absolute;
+                text-align: center;
+                justify-content: center;
+                max-width: 150px;
+                max-height: 100px;
+                min-height: 35px;
+                background-color: #b05cffb7;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+        }
+
+        .dropdownContent a {
+                float: none;
+                color: white;
+                line-height: 30px;
+                margin: 20px;
+        }
+
+        .dropdownContent a:hover {
+                text-decoration: underline;
+                color: rgb(9, 139, 68);
+        }
+
+        .navDropDown:hover .dropdownContent {
+                display: block;
         }
 
         .content {
@@ -128,8 +180,8 @@
                 height: 200px;
         }
 
-        .rightContent1{
-            background-color: whitesmoke;
+        .rightContent1 {
+                background-color: whitesmoke;
                 border-color: #b05cffb7;
                 font-size: 20px;
                 border-width: 5px;
