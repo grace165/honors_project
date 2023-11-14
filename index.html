@@ -112,15 +112,16 @@
                 <div class="spacer1"></div>
 
                 <div class="footer center">
-                        <a class="link2 " href="../contact/index.html">Contact</a>
+                        <a class="link2 " href="../honors_code/contact/index.html">Contact</a>
                         &nbsp;
                         &nbsp;
-                        <a class="link2" href="../about/index.html">About</a>
+                        <a class="link2" href="../honors_code/about/index.html">About</a>
                         &nbsp;
                         &nbsp;
-                        <a class="link2" href="../reflection/index.html">Reflection</a>
+                        <a class="link2" href="../honors_code/reflection/index.html">Reflection</a>
                         &nbsp;
                         &nbsp;
+                         <!--space for social media links/clickable icon links-->
                         <a class="instaIcon" href="https://www.instagram.com/graphicsgremlin/">
                                 <p></p>
                         </a>
@@ -131,7 +132,6 @@
                         <a class="fbIcon" href="https://www.facebook.com/profile.php?id=61553115101081">
                                 <p></p>
                         </a>
-                        <!--space for social media links/clickable icon links-->
                 </div>
         </div>
 
@@ -147,6 +147,7 @@
                 font-size: 15px;
                 width: 100%;
                 margin: 0%;
+                min-height: 100vh;
         }
 
         p {
@@ -169,6 +170,8 @@
 
         .container {
                 border-radius: 20px;
+                min-height: 100vh;
+                position: relative;
         }
 
         .navBar {
@@ -222,6 +225,7 @@
                 margin-left: 40px;
                 margin-right: 40px;
                 font-size: 20px;
+                flex-grow: 1;
         }
 
         .title {
@@ -233,7 +237,11 @@
                 background-color: #b05cffb7;
                 color: white;
                 font-size: 15px;
-                height: 35px;
+                height: 85px;
+                margin-top: auto;
+                left: 0;
+                width: 100%;
+                position: absolute;
         }
 
         .instaIcon {

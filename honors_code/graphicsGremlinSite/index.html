@@ -40,22 +40,27 @@
                 <a class="link" href="../graphicsGremlinSite/index.html">Graphic Design Site</a>
         </div>
 
-        <div class="title center">
-                <h1>Graphics Gremlin Site</h1>
-        </div>
+        <div class="container">
+                <div class="title center">
+                        <h1>Graphics Gremlin Site</h1>
+                </div>
 
-        <div class="center leftContent">
-                <p>This is the link to the site I created to represent my Graphics Gremlin graphic design business.
-                        This website will act as my storefront and primary source of customer influence. 
-                        All social media accounts will work to encourage users to come to this site and request a beautifully 
-                        designed logo or website.
-                </p>
-        </div>
+                <div class="center leftContent">
+                        <p>This is the link to the site I created to represent my Graphics Gremlin graphic design
+                                business.
+                                This website will act as my storefront and primary source of customer influence.
+                                All social media accounts will work to encourage users to come to this site and request
+                                a beautifully
+                                designed logo or website.
+                        </p>
+                </div>
 
-        <div class="spacer"></div>
+                <div class="spacer"></div>
 
-        <div class="center rightContent">
-                <a class="link3" href="https://graphicsgremlin.wixsite.com/graphics-gremlin">Graphics Gremlin Website</a>
+                <div class="center rightContent">
+                        <a class="link3 prettyText" href="https://graphicsgremlin.wixsite.com/graphics-gremlin">Graphics
+                                Gremlin Website</a>
+                </div>
         </div>
 
         <div class="spacer"></div>
@@ -112,6 +117,7 @@
 
         .container {
                 border-radius: 20px;
+                min-height: 78vh;
         }
 
         .navBar {
@@ -198,12 +204,31 @@
                 padding-bottom: 20px;
         }
 
+        .prettyText {
+                text-transform: uppercase;
+                background-image: linear-gradient(-225deg, #231557 0%, cyan 25%, rgb(5, 250, 5) 50%, yellow 100%);
+                background-size: auto auto;
+                background-clip: border-box;
+                background-size: 200% auto;
+                color: #fff;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: textclip 2s linear infinite;
+                display: inline-block;
+                font-size: xxx-large;
+                font-style: bold;
+        }
+
         .footer {
                 background-color: #b05cffb7;
                 color: white;
                 font-size: 15px;
-                padding-bottom: 0%;
-                height: 35px;
+                height: 85px;
+                margin-top: auto;
+                left: 0;
+                width: 100%;
+                position: absolute;
         }
 
         .instaIcon {
@@ -237,8 +262,8 @@
                 margin: 10px;
         }
 
-        .link3{
-                color: black; 
+        .link3 {
+                color: black;
                 text-decoration: underline;
         }
 
@@ -254,6 +279,12 @@
                 align-items: center;
                 justify-content: center;
                 margin: auto;
+        }
+
+        @keyframes textClip {
+                to {
+                        background-position: 200% center;
+                }
         }
 </style>
 
